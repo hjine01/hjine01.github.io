@@ -1,52 +1,25 @@
-
-<!doctype html>
-<html>
-
-
-<style>
-  embed {
-    width: 100%;
-    max-width: 560px;
-    height: 315px;
-  }
-</style>
-
-<head>
-  <title>떡9</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      background-color: #272727;
-    }
-  </style>
-</head>
-
-<body>
-  <center>
-    <font color=white><h1>떡구의 블로그</h1></font>
-    <youtubeWrap>
-      <embed src="https://www.youtube.com/embed/S8dmq5YIUoc?amp;autoplay=1&amp;loop=1;playlist=tdi19AZvHkQ"
-        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></embed>
-    </youtubeWrap>
-    <font color=white><p>안녕하세요</p></font>
-    <font color=white><a href="http://hjine01.blog.me">네이버 블로그</a></font>
-  
-  <br><br><br><br><br><br>
-<div id="disqus_thread"></div>
-<script>
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = 'https://hjine01-github-io.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
-</center>
-</body>
-
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | HYEONJIN_2WEEKJAM</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Desktop.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body>
+    <div class="webgl-content">
+      <div id="gameContainer" style="width: 960px; height: 600px"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+        <div class="title">HYEONJIN_2WEEKJAM</div>
+      </div>
+    </div>
+  </body>
 </html>
-
