@@ -4,12 +4,17 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>디펜스겜</title>
+    <style>
+      body {
+        background-color: #272727;
+      }
+    </style>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
     <script src="TemplateData/UnityProgress.js"></script>
     <script src="DefenceGameBuild/UnityLoader.js"></script>
     <script>
-      var gameInstance = UnityLoader.instantiate("gameContainer", "DefenceGameBuild/0131_2.json", {onProgress: UnityProgress});
+      var gameInstance = UnityLoader.instantiate("gameContainer", "DefenceGameBuild/0203.json", {onProgress: UnityProgress});
     </script>
   </head>
   <body>
@@ -18,7 +23,7 @@
       <div class="footer">
         <div class="webgl-logo"></div>
         <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
-        <div class="title">최대화 >></div>
+        <div class="title"><font color=white>최대화 >></font></div>
       </div>
       <!-- <font color=white><a href="/index.html">홈</a></font> -->
     </div>
