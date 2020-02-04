@@ -7,14 +7,14 @@
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
     <script src="TemplateData/UnityProgress.js"></script>
-    <script src="DefenceGameBuild/UnityLoader.js"></script>
+    <script src="Build/UnityLoader.js"></script>
     <script>
-      var gameInstance = UnityLoader.instantiate("gameContainer", "DefenceGameBuild/0204.json", {onProgress: UnityProgress});
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/0204_2.json", {onProgress: UnityProgress});
     </script>
   </head>
   <body>
     <div class="webgl-content">
-      <div id="gameContainer" style="width: 960px; height: 600px"></div>
+      <div id="gameContainer" style="width: 1400px; height: 600px"></div>
       <div class="footer">
         <div class="webgl-logo"></div>
         <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
@@ -47,7 +47,7 @@
         <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
         <div class="title">왜안되지 최대화 >></div>
       </div>
-      <!-- <font color=white><a href="/index.html">홈</a></font> -->
-    </div>
+      <font color=white><a href="/index.html">홈</a></font> -->
+    <!-- </div>
   </body>
 </html> -->
